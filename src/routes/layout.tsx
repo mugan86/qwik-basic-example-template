@@ -14,7 +14,8 @@ export default component$(() => {
             <li>About</li>
           </ul>
         </div>
-        <div class='column content'>
+        <div class='column content level-1'>
+          <h2><code>src/routes/layout.tsx</code></h2>
           <Slot />
         </div>
       </section>
