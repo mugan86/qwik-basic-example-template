@@ -39,12 +39,8 @@ h2 {
   filter: hue-rotate(180deg);
 }
 
-nav {
-  background-color: var(--qwik-dark-purple);
-  margin-bottom: 15px;
-  padding: 10px;
-  text-align: center;
-}
+
+/*Distribución del contenido de la mitad*/
 
 .row {
   display: flex;
@@ -55,96 +51,29 @@ nav {
   height: 200px; 
 }
 
+/* Secciones */
+
+nav {
+  border: 2px solid var(--qwik-dark-purple);
+  border-radius: 2px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+}
 .menu-items {
   flex-basis: 20%;
-  background-color: var(--menu);
+  border: 2px solid var(--menu);
   margin-right: 5px;
 }
+
+/* Sección donde se carga el contenido de las rutas */
 .content {
   flex-basis: 80%;
-  background-color: var(--qwik-light-blue);
-}
-
-ul {
-  list-style-type: square;
-  margin: 5px 0 30px 0;
-  padding-left: 25px;
-}
-
-li {
-  padding: 8px 0;
-}
-
-li::marker {
-  color: var(--qwik-light-blue);
-}
-
-a,
-a:visited {
-  color: var(--qwik-dark-blue);
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-table.commands {
-  margin: 0 0 30px 0;
-}
-
-.commands td {
-  padding: 5px;
-}
-
-.commands td:first-child {
-  white-space: nowrap;
-  padding-right: 20px;
-}
-
-code {
-  font-family: Menlo, Monaco, Courier New, monospace;
-  font-size: 0.9em;
-  background-color: rgb(224, 224, 224);
-  padding: 2px 4px;
-  border-radius: 3px;
-  border-bottom: 2px solid #bfbfbf;
+  border: 2px solid var(--qwik-light-blue);
 }
 
 footer {
-  padding: 15px;
   margin-top: 10px;
   text-align: center;
-  font-size: 0.8em;
-  background-color: var(--qwik-light-purple);
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-a.mindblow {
-  margin: 0 auto;
-  display: block;
-  background: var(--qwik-dark-purple);
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 0;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  width: fit-content;
-  border-bottom: 4px solid black;
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🤯</text></svg>")
-      16 0,
-    auto; /*!emojicursor.app*/
-}
-
-a.mindblow:hover {
-  border-bottom-width: 0px;
-  margin-bottom: 4px;
-  transform: translateY(4px);
+  border: 2px solid red;
 }

@@ -8,7 +8,7 @@ export default component$(() => {
       </nav>
       <section class='row'>
         <div class='column menu-items'>
-          <h2>Menú</h2>
+          <h2>Menu</h2>
           <ul>
             <li>Home</li>
             <li>About</li>
