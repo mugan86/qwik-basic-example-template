@@ -1,26 +1,19 @@
 import { component$, Slot } from '@builder.io/qwik';
+import { Footer } from '~/components/core/footer';
+import { Header } from '~/components/core/header';
+import { Menu } from '~/components/core/menu';
 
 export default component$(() => {
   return (
     <>
-      <nav>
-        <h1>Header</h1>
-      </nav>
+      <Header />
       <section class='row'>
-        <div class='column menu-items'>
-          <h2>Menu</h2>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-          </ul>
-        </div>
+        <Menu />
         <div class='column content'>
           <Slot />
         </div>
       </section>
-      <footer>
-        <h2>Footer</h2>
-      </footer>
+      <Footer />
     </>
   );
 });
