@@ -6,7 +6,7 @@ export default component$(() => {
       <p>
         <code>src/routes/about/index.tsx</code>
       </p>
-      <h1>Ruta "/about"</h1>
+      <h1>Ruta "/about/about-one"</h1>
       Esta es la página 'about'
     </div>
   );
