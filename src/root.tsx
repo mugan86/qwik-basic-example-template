@@ -3,7 +3,7 @@ import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from '@builder.
 import { RouterHead } from './components/router-head/router-head';
 
 import globalStyles from './global.css?inline';
-
+import leaflet from './../node_modules/leaflet/dist/leaflet.css?inline'
 export default component$(() => {
   /**
    * The root of a QwikCity site always start with the <QwikCityProvider> component,
@@ -12,6 +12,7 @@ export default component$(() => {
    * Dont remove the `<head>` and `<body>` elements.
    */
   useStyles$(globalStyles);
+  useStyles$(leaflet);
 
   return (
     <QwikCityProvider>
