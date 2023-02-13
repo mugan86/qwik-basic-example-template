@@ -77,3 +77,8 @@ footer {
   text-align: center;
   border: 2px solid red;
 }
+
+code {
+  background-color: rgb(185, 185, 185);
+  font-size: x-large;
+}
