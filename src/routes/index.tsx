@@ -1,24 +1,9 @@
-import { component$, useStore, useStyles$ } from '@builder.io/qwik';
+import { component$, useStyles$ } from '@builder.io/qwik';
 import { DocumentHead, Link } from '@builder.io/qwik-city';
-export const PlusInfoCss = `
-.plus-info {
-  margin-top: 1em;
-  border: 1px solid red;
-  padding: 1em;
-  display: block;
-}
-`;
-export const PlusInfo = component$(() => {
-  useStyles$(PlusInfoCss);
-  return (
-    <div class='plus-info'>
-      <div>More info...</div>
-    </div>
-  );
-});
+
+
 
 export default component$(() => {
-  const store = useStore({ open: false });
   return (
     <div>
       <h1>Leaflet - Styles</h1>
@@ -32,18 +17,6 @@ export default component$(() => {
           Medium
         </a>
       </p>
-      <ol>
-        <li>Introducción a los estilos</li>
-        <li>Estilos globales</li>
-        <li>Estilos por componente: Uso de useStyles$ y useStylesScoped$</li>
-        <li>CSS en Javascript</li>
-        <li>Styled Components (Componentes con estilo)</li>
-      </ol>
-      {store.open ? <PlusInfo /> : null}
-      <button onClick$={() => (store.open = !store.open)}>
-        Show Plus Info
-      </button>
-      <br />
       <Link href='/second'>Second Page</Link>
     </div>
   );
