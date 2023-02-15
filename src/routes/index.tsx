@@ -1,13 +1,39 @@
-import { component$, useStyles$ } from '@builder.io/qwik';
+import { component$, useStylesScoped$ } from '@builder.io/qwik';
 import { DocumentHead, Link } from '@builder.io/qwik-city';
 
+export const OrangeComponent = component$(() => {
+  useStylesScoped$(`
+    .bg {
+      background-color: orange;
+    }`);
+  return (
+    <div class="bg">
+      <div>OrangeComponent</div>
+    </div>
+  );
+});
 
+export const GreenComponent = component$(() => {
+  useStylesScoped$(`
+    .bg {
+      background-color: green;
+    }`);
+
+  return (
+    <div class="bg">
+      <div>Green Componente</div>
+    </div>
+  );
+});
 
 export default component$(() => {
   return (
     <div>
       <h1>Leaflet - Styles</h1>
       <p>Trabajaremos con los estilos</p>
+      
+      <OrangeComponent/>
+      <GreenComponent/>
       <p>
         Todos los artículos con los que hemos trabajado:{' '}
         <a
