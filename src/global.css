@@ -35,6 +35,11 @@ h2 {
   margin: 0 0 5px 0;
 }
 
+h1 {
+  color: red;
+  border: 2px dotted var(--qwik-dark-blue)
+}
+
 .lightning {
   filter: hue-rotate(180deg);
 }
