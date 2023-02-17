@@ -1,26 +1,18 @@
-import { component$, useStylesScoped$ } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import { DocumentHead, Link } from '@builder.io/qwik-city';
+import { greenClass, orangeClass } from '~/styles/colors.css';
 
 export const OrangeComponent = component$(() => {
-  useStylesScoped$(`
-    .bg {
-      background-color: orange;
-    }`);
   return (
-    <div class="bg">
+    <div class={orangeClass}>
       <div>OrangeComponent</div>
     </div>
   );
 });
 
 export const GreenComponent = component$(() => {
-  useStylesScoped$(`
-    .bg {
-      background-color: green;
-    }`);
-
   return (
-    <div class="bg">
+    <div class={greenClass}>
       <div>Green Componente</div>
     </div>
   );
