@@ -1,24 +1,21 @@
-import { style, styled} from 'styled-vanilla-extract/qwik';
+import { styled } from 'styled-vanilla-extract/qwik';
 
+const contentBlockClass = (height: number) => `
+    display: block;
+    width: 100%;
+    height: ${height}px;
+`;
 export const RedBox = styled.div`
-  display: block;
-  width: 100%;
-  height: 100px;
+  ${contentBlockClass(100)}
   background: red;
 `;
 
-const contenBlockClass = {
-    display: 'block',
-    width: '100%',
-    height: '200px',
-};
+export const OrangeBox = styled.div`
+  ${contentBlockClass(200)}
+  background: orange;
+`;
 
-export const orangeClass = style({
-    ...contenBlockClass,
-    background: 'orange',
-});
-
-export const greenClass = style({
-    ...contenBlockClass,
-    background: 'green',
-});
+export const GreenBox = styled.div`
+  ${contentBlockClass(200)}
+  background: green;
+`;

@@ -1,22 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { DocumentHead, Link } from '@builder.io/qwik-city';
-import { greenClass, orangeClass, RedBox } from '~/styles/colors.css';
-
-export const OrangeComponent = component$(() => {
-  return (
-    <div class={orangeClass}>
-      <div>OrangeComponent</div>
-    </div>
-  );
-});
-
-export const GreenComponent = component$(() => {
-  return (
-    <div class={greenClass}>
-      <div>Green Componente</div>
-    </div>
-  );
-});
+import { GreenBox, OrangeBox, RedBox } from '~/styles/colors.css';
 
 export default component$(() => {
   return (
@@ -26,8 +10,12 @@ export default component$(() => {
       <RedBox>
         ¡¡Aquí el contenido con el fondo rojo!!
       </RedBox>
-      <OrangeComponent/>
-      <GreenComponent/>
+      <OrangeBox>
+        <div>OrangeComponent</div>
+      </OrangeBox>
+      <GreenBox>
+        <div>GreenComponent</div>
+      </GreenBox>
       <p>
         Todos los artículos con los que hemos trabajado:{' '}
         <a
