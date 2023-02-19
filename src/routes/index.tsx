@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { DocumentHead, Link } from '@builder.io/qwik-city';
-import { greenClass, orangeClass } from '~/styles/colors.css';
+import { greenClass, orangeClass, RedBox } from '~/styles/colors.css';
 
 export const OrangeComponent = component$(() => {
   return (
@@ -23,7 +23,9 @@ export default component$(() => {
     <div>
       <h1>Leaflet - Styles</h1>
       <p>Trabajaremos con los estilos</p>
-      
+      <RedBox>
+        ¡¡Aquí el contenido con el fondo rojo!!
+      </RedBox>
       <OrangeComponent/>
       <GreenComponent/>
       <p>
