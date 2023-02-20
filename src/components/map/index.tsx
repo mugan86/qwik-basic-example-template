@@ -1,10 +1,10 @@
-import { component$, useClientEffect$, useStyles$ } from '@builder.io/qwik';
+import { component$, useBrowserVisibleTask$, useStylesScoped$ } from '@builder.io/qwik';
 import { control, LatLngTuple, marker, tileLayer, Map } from 'leaflet';
 import mapCss from './map.css?inline';
 export const LeafletMap = component$(() => {
-  useStyles$(mapCss);
+  useStylesScoped$(mapCss);
 
-  useClientEffect$(() => {
+  useBrowserVisibleTask$(() => {
     const soraluzeTownCenter: LatLngTuple = [43.174778, -2.411722];
     const map = new Map('map').setView(soraluzeTownCenter, 15);
 
